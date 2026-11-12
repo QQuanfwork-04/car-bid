@@ -67,29 +67,41 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
   font-family: var(--heading);
   font-weight: 500;
   color: var(--text-h);
 }
 
 h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
+  font-size: 84px;
+  line-height: 0.98em;
+  letter-spacing: -0.05em;
   @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
+    font-size: 80px;
   }
 }
 h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
+  font-size: 56px;
+  line-height: 1.02em;
+  letter-spacing: -0.045em;
   @media (max-width: 1024px) {
-    font-size: 20px;
+    font-size: 50px;
   }
+}
+h3{
+  margin: 0 0 6px;
+  font-size: 48px;
+line-height: 1em;
+letter-spacing: -0.045em;
+}
+h4{
+  font-size: 22px;
+  margin: 0 0 4px;
+  line-height: 1.5em;
+  letter-spacing: -0.03em;
 }
 p {
   margin: 0;
@@ -108,4 +120,12 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+@layer base {
+  button {
+    background-color: #e5e7eb;
+    border: 1px solid #9ca3af;
+    padding: 4px 12px;
+    border-radius: 4px;
+  }
 }
