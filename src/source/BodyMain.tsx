@@ -1,28 +1,21 @@
 import Catagory from "./components/Catagories";
 import Live from "./components/Live";
 import Typecar from "./components/Type";
+import type {HeroCard, Strips, Cars } from "./types"
 
-export interface HeroCard {
-  id: number;
-  left: string;
-  top: string;
-  rot: number;
-  bg: string;
-  body: string;
-  z: number;
-  tag: string;
-  price: string;
-  title: string;
-  specs: string;
-  location: string;
+interface BodyProps {
+  heroCard: HeroCard[];
+  strips: Strips[];
+  cars: Cars[];
+
 }
 
-const Body = ({ heroCard }: { heroCard: HeroCard [] }) => {
+const Body = ({ heroCard, strips, cars }: BodyProps) => {
   return (
     <section className="main_content">
       <Live card={heroCard} />
-      <Typecar />
-      <Catagory />
+      <Typecar strip={strips}/>
+      <Catagory car={cars}/>
     </section>
   );
 };

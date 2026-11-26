@@ -6,7 +6,7 @@ body{
 #root{
   width: 100%;
 }
-.header{
+/* .header{
   display: flex;
   width: 100%;
   height: 88px;
@@ -14,9 +14,8 @@ body{
   align-items: center;
   gap: 12px 24px;
   padding: 20px 0;
-}
+} */
 .header_img{
-  width: 93px;
   height:30px;
   display: flex;
   gap:4px;
@@ -36,11 +35,8 @@ body{
 }
 #nav_head{
   display: flex;
-  width: 329px;
   height: 37px;
   list-style-type: none;
-  justify-content: space-around;
-  align-items: center;
   padding:0;
   margin:0;
 }
@@ -62,7 +58,6 @@ body{
   display: flex;
   gap: 10px;
   align-items: center;
-  margin-right: 10px;
 }
 .auth_link:hover{
   color:black;

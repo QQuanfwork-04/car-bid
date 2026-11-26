@@ -1,7 +1,7 @@
 const Header = () => {
 return (
-    <div className="header">
-        <div className="header_img">
+    <div className="header w-full max-w-310 my-0 mx-auto py-5.5 px-8 flex flex-wrap items-center gap-y-3 gap-x-6 ">
+        <div className="header_img flex-1">
            <svg 
             xmlns="http://www.w3.org/2000/svg"
             width= '26px'
@@ -21,31 +21,31 @@ return (
            </svg>
           <p>CarBid</p>
         </div>
-        <div className="header_nav">
+        <div className="header_nav flex flex-wrap gap-[4px] my-0 mx-auto flex-row">
           <ul id="nav_head">
-            <li>
+            <li className="py-[8px] px-[14px]">
               <a className="nav_link" href="#">
                 Browse
               </a>
             </li>
-            <li>
+            <li className="py-[8px] px-[14px]">
               <a className="nav_link" href="#">
                 Sell a car
               </a>
             </li>
-            <li>
+            <li className="py-[8px] px-[14px]">
               <a className="nav_link" href="#">
                 My Cars
               </a>
             </li>
-            <li>
+            <li className="py-[8px] px-[14px]">
               <a className="nav_link" href="#">
                 Offers
               </a>
             </li>
           </ul>
         </div>
-        <div className="header_auth">
+        <div className="header_auth flex-1 justify-end">
           <button className="btn_toggle bg-white w-[44px] h-[44px] flex justify-center items-center border border-[#e4e4e1] rounded-[50%] cursor-pointer">
             <svg
               className="ic_toggle"
